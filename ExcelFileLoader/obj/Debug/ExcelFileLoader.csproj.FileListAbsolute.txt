@@ -4,3 +4,9 @@ c:\users\t-420\documents\visual studio 2013\Projects\ExcelFileLoader\ExcelFileLo
 c:\users\t-420\documents\visual studio 2013\Projects\ExcelFileLoader\ExcelFileLoader\obj\Debug\ExcelFileLoader.csprojResolveAssemblyReference.cache
 c:\users\t-420\documents\visual studio 2013\Projects\ExcelFileLoader\ExcelFileLoader\obj\Debug\ExcelFileLoader.exe
 c:\users\t-420\documents\visual studio 2013\Projects\ExcelFileLoader\ExcelFileLoader\obj\Debug\ExcelFileLoader.pdb
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\bin\Debug\ExcelFileLoader.exe.config
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\obj\Debug\ExcelFileLoader.exe
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\obj\Debug\ExcelFileLoader.pdb
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\bin\Debug\ExcelFileLoader.exe
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\bin\Debug\ExcelFileLoader.pdb
+C:\Users\admin\Documents\ExcelIntoDataTable\ExcelFileLoader\obj\Debug\ExcelFileLoader.csprojResolveAssemblyReference.cache

@@ -15,29 +15,36 @@ namespace ExcelFileLoader
         {
             while (true)
             {
-                string filepath = @"C:\Users\T-420\Documents\TradeFile.xlsx";
+                string filepath = @"C:\Users\admin\Documents\TradeFile2.xlsx";
                 DataTable output = exceldata(filepath);
                 DataColumnCollection columns = output.Columns;
-                Console.Write("Row 1 : ");
+                Console.Write("Header   : ");
                 foreach (DataColumn column in columns)
                 {
-                    Console.Write(column.ColumnName);
+                    Console.Write(column.ColumnName.PadRight(10,' '));
                     Console.Write("|");
                 }
                 Console.WriteLine();
 
-                int i = 2;
+                int i = 1;
                 foreach (DataRow row in output.Rows)
                 {
-                    Console.Write("Row " + i + " : ");
+                    
+                    Console.Write("Row " + i.ToString().PadLeft(4,' ') + " : ");
                     i += 1;
                     object[] array = row.ItemArray;
                     foreach (var cell in array)
                     {
-                        Console.Write(cell.ToString());
+                        string cellData = cell == DBNull.Value ? "NULL" : cell.ToString();
+                        Console.Write(cellData.PadRight(10, ' '));
                         Console.Write("|");
                     }
                     Console.WriteLine();
+
+                }
+                foreach (var v in ExtractColumn(output, "F2"))
+                {
+                    Console.Write(v == DBNull.Value || v == null ? "NULL" : v.ToString());
                 }
                 string repeat = Console.ReadLine();
             }
@@ -74,6 +81,11 @@ namespace ExcelFileLoader
             conn.Close();
             return dtexcel;
 
+        }
+
+        public static List<object> ExtractColumn(DataTable input, string columnName)
+        {
+            return  input.AsEnumerable().Select(r => r.Field<object>(columnName)).ToList();
         }
 
      
